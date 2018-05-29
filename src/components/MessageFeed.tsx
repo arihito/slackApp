@@ -51,7 +51,7 @@ export class MessageFeed extends React.Component<MessageFeedProps, MessageFeedSt
                 <div>{message.date}</div>
               </Comment.Metadata>
               <Comment.Text>
-                {message.body}
+                「{message.body}」
               </Comment.Text>
             </Comment.Content>
           </Comment>
