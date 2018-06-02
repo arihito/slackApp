@@ -3,6 +3,8 @@ import { Menu, Icon } from 'semantic-ui-react';
 import { Link, NavLink } from 'react-router-dom';
 
 const channels = ['general', 'random'];
+
+// チャンネル一覧(サイドメニュー)
 export const ChannelList = () => {
   return (
     <Menu inverted vertical fixed={'left'}>

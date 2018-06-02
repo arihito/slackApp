@@ -11,6 +11,7 @@ interface MessageFormState {
   body?: string;
 }
 
+// 新規メッセージを送信
 export class MessageForm extends React.Component<MessageFormProps, MessageFormState> {
 
   constructor(props: MessageFormProps) {

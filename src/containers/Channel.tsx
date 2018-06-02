@@ -14,6 +14,7 @@ interface ChannelState {
   shouldReload: boolean;
 }
 
+// メッセージ一覧や送信機能をまとめるチャンネル詳細
 export class Channel extends React.Component<ChannelProps, ChannelState>{
 
   constructor(props: ChannelProps) {

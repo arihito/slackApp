@@ -12,6 +12,7 @@ interface MessageFeedState {
   messages: Message[];
 }
 
+// 送信されたメッセージ一覧を管理
 export class MessageFeed extends React.Component<MessageFeedProps, MessageFeedState> {
   
   constructor(porps: MessageFeedProps) {
@@ -21,6 +22,7 @@ export class MessageFeed extends React.Component<MessageFeedProps, MessageFeedSt
     };
   }
 
+  // メッセージデータを取得したらStateに設定
   private fetchMessages = (channelName: string) => {
     this.props.setShouldReload(false);
     fetchMessages(channelName).then(response => {

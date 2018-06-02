@@ -7,6 +7,7 @@ const instance: AxiosInstance = Axios.create({
   timeout: 10000
 });
 
+// メッセージのデータ型を定義
 export interface Message {
   id?: string;
   body?: string;
@@ -18,6 +19,7 @@ export interface Message {
   date?: string;
 }
 
+// メッセージ一覧を取得
 export const fetchMessages = (
   channelName: string, 
   params = {}, 

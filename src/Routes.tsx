@@ -6,6 +6,7 @@ import { ChannelList } from './components/ChannelList';
 import { Channel } from './containers/Channel';
 import { Container } from 'semantic-ui-react';
 
+// URLとComponentを紐付け
 const routes = <BrowserRouter>
   <div id='wrapper'>
     <ChannelList />
